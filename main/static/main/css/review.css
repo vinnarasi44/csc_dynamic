@@ -300,6 +300,7 @@
 
 .site-header {
     position: sticky;
+    width: 100%;
     top: 0;
     z-index: 999;
     background: #ffffff;
@@ -307,12 +308,16 @@
 }
 
 .navbar {
+    width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin: 0;
+    left: 0;
+    right: 0;
     padding: 14px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 40px;
 }
 
 /* LOGO */
