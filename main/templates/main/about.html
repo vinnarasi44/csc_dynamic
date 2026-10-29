@@ -2,6 +2,7 @@
 {% load static %}
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <style>
 .about-hero { position: relative; overflow: hidden; background: #0b1530; }
 
@@ -265,36 +266,35 @@
     <div class="grid">
 
         <div class="card pop">
-            <div class="card-icon-wrap">
-                <img src="{% static 'main/images/cloud.webp' %}" alt="Trainer"
-                     onerror="this.parentElement.innerHTML='<span class=\'card-emoji\'>👨‍🏫</span>'">
+            <div class="card-icon">
+              <i class="fa-solid fa-chalkboard-user"></i>  
+            
             </div>
             <h3>Expert Trainers</h3>
             <p>Learn from industry professionals with real-time experience and proven track records.</p>
         </div>
+        </div>
 
         <div class="card pop">
-            <div class="card-icon-wrap">
-                <img src="{% static 'main/images/digital.webp' %}" alt="Project"
-                     onerror="this.parentElement.innerHTML='<span class=\'card-emoji\'>💻</span>'">
+            <div class="card-icon">
+               <i class="fa-solid fa-laptop-code"></i> 
+            
             </div>
             <h3>Live Projects</h3>
             <p>Gain strong hands-on experience with live and practical real-world projects.</p>
         </div>
 
         <div class="card pop">
-            <div class="card-icon-wrap">
-                <img src="{% static 'main/images/cloud.webp' %}" alt="Support"
-                     onerror="this.parentElement.innerHTML='<span class=\'card-emoji\'>🏆</span>'">
+            <div class="card-icon">
+              <i class="fa-solid fa-handshake"></i> 
             </div>
             <h3>Career Support</h3>
             <p>Resume building, mock interviews, and full placement assistance included.</p>
         </div>
 
         <div class="card pop">
-            <div class="card-icon-wrap">
-                <img src="{% static 'main/images/digital.webp' %}" alt="Class"
-                     onerror="this.parentElement.innerHTML='<span class=\'card-emoji\'>🕐</span>'">
+            <div class="card-icon">
+              <i class="fa-solid fa-calendar-clock"></i>
             </div>
             <h3>Flexible Batches</h3>
             <p>Morning, evening, and weekend batches designed around your schedule.</p>
