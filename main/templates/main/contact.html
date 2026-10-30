@@ -772,7 +772,7 @@
     <div class="orb-left"></div>
     <div class="hero-inner">
         <div class="hero-badge">
-            <span>📬</span> Get In Touch
+         Get In Touch
         </div>
         <h1>Contact <span>CSC Anna Nagar</span></h1>
         <p>
@@ -1321,6 +1321,7 @@ function onlyNumbers(event) {
         event.preventDefault();
         return false;
     }
+<!-- Phone -->
 document.getElementbyId("phoneError").textContent = "";
 return true;
 }
@@ -1339,6 +1340,7 @@ if (allowedKeys.includes(event.key)|| event.ctrKey || event.metaKey) {
 if (/^[a-zA-Z]$/.test(event.key)) {
     return true;
 }
+<!-- Name -->
 document.getElementById("nameError").textContent = "Not allowed characters";
 
 event.preventdefault();
@@ -1348,9 +1350,13 @@ return false;
 function validateName(input) {
     const oldValue = input.value;
     input.value = oldValue.replace(/[^a-zA-Z]/g, "");
+    //maximum 30 characters
+    if (input.value.length > 30) {
+        input.value = input.value.substring(0, 30);
+    }
 
     document.getElementById("nameError").textContent = 
-    oldValue !== input.value ? "Not allowed characters" : "";
+    oldValue !== input.value ? "Only letters allowed (Maximum 30 characters)" : "";
 }
 
 function validateEmail(input) {
